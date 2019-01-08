@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1546978292,
+	"version": 1546986448,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -14,6 +14,8 @@
 		"images/personagem-sheet0.png",
 		"images/sprite-sheet0.png",
 		"images/leao-sheet0.png",
+		"images/leao-sheet1.png",
+		"images/leao-sheet2.png",
 		"images/hp-sheet0.png",
 		"images/spritefont.png",
 		"images/direita-sheet0.png",
@@ -22,6 +24,9 @@
 		"images/sprite2-sheet0.png",
 		"images/sprite2-sheet1.png",
 		"images/sprite2-sheet2.png",
+		"images/poder-sheet0.png",
+		"images/gameover-sheet0.png",
+		"images/sprite3-sheet0.png",
 		"media/fighting1.ogg",
 		"media/fighting2.ogg",
 		"media/fighting3.ogg",
