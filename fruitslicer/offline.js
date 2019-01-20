@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1547994162,
+	"version": 1548024934,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -26,9 +26,14 @@
 		"images/splash_m-sheet0.png",
 		"images/splash_m-sheet1.png",
 		"images/score_icon-sheet0.png",
+		"images/btnmenu-sheet0.png",
+		"images/life-sheet0.png",
 		"media/kfine_slice (mp3cut.net).ogg",
-		"media/bomb timer sound effect (mp3cut.net).ogg",
+		"media/bomb.ogg",
 		"media/explosion.ogg",
+		"media/fail.ogg",
+		"media/gameover.m4a",
+		"media/gameover.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
