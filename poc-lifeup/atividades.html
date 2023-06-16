@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Atividades</title>
+	</head>
+	<body>
+		<h1>Atividades</h1>
+
+		<ul id="lista">
+		</ul>
+		<script>
+			window.onload = function () {
+				var address = localStorage.getItem('address');
+				let xhr = new XMLHttpRequest();
+				xhr.open('GET', 'http://'+address+':13276/tasks');
+				xhr.responseType = 'json';
+				xhr.send();
+				
+				xhr.onload = function() {
+  if (xhr.status != 200) { // analyze HTTP status of the response
+    alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+  } else { // show the result
+    data = xhr.response.data;
+	var lista = document.querySelector('#lista');
+
+	data.forEach(task => {
+	 var li = document.createElement("li");
+	 li.appendChild(document.createTextNode(task.name));
+	 lista.appendChild(li);
+	});
+  }
+};
+
+
+xhr.onerror = function() {
+  alert("Request failed");
+};
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>pagina de login</title>
+<head>
+<body>
+<h1>pagina de login</h1>
+
+<img src="qr-code-local.png">
+<form onsubmit="event.preventDefault(); entrar();">
+<div>
+<input type="text" name="address" id="address"  placeholder="codigo de autenticacao">
+<button type="submit">Entrar</button>
+<div>
+</form>
+<script>
+function int2ip (ipInt) {
+		return ( (ipInt>>>24) +'.' + (ipInt>>16 & 255) +'.' + (ipInt>>8 & 255) +'.' + (ipInt & 255) );
+	}
+function entrar(){
+	var codigo = document.querySelector('#address');
+	address= int2ip(codigo.value);
+	localStorage.setItem('address', address);
+	// Simulate a mouse click:
+	window.location.href = "atividades.html";
+}
+</script>
+</body>
+</html>
